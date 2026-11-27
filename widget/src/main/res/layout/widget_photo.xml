@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ViewFlipper
+        android:id="@+id/widget_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateFirstView="false"
+        android:autoStart="false"
+        android:flipInterval="0"
+        android:inAnimation="@android:anim/fade_in"
+        android:outAnimation="@android:anim/fade_out">
+
+        <ImageView
+            android:id="@+id/widget_image_a"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/widget_image_description"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/widget_image_b"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/widget_image_description"
+            android:scaleType="fitXY" />
+    </ViewFlipper>
+
+    <TextView
+        android:id="@+id/widget_initial_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#66000000"
+        android:paddingStart="12dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="6dp"
+        android:text="@string/widget_initial_label"
+        android:textColor="#CCFFFFFF"
+        android:textSize="13sp" />
+</FrameLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pw_primary">#FF9CD9BF</color>
+    <color name="pw_on_primary">#FF00382A</color>
+    <color name="pw_primary_container">#FF0B513F</color>
+    <color name="pw_on_primary_container">#FFB8EFD8</color>
+    <color name="pw_secondary">#FFB4CCBD</color>
+    <color name="pw_surface">#FF0F1512</color>
+    <color name="pw_on_surface">#FFE1E3DE</color>
+    <color name="pw_surface_variant">#FF3F4943</color>
+    <color name="pw_surface_container">#FF171D1A</color>
+    <color name="pw_surface_container_high">#FF1D2521</color>
+    <color name="pw_on_surface_variant">#FFBFC9C1</color>
+    <color name="pw_outline">#FF89938C</color>
+    <color name="pw_outline_variant">#FF3F4943</color>
+    <color name="pw_error">#FFF2B8B5</color>
+    <color name="pw_preview_background">#FF1B2320</color>
+    <color name="pw_preview_background_end">#FF0C1210</color>
+</resources>

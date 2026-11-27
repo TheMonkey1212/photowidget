@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Theme items that need a newer platform version live in values-vNN and inherit
+         from this base, so API 26 devices never inflate an attribute they lack. -->
+    <style name="Theme.PhotoWidget.Base" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/pw_primary</item>
+        <item name="colorOnPrimary">@color/pw_on_primary</item>
+        <item name="colorPrimaryContainer">@color/pw_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/pw_on_primary_container</item>
+        <item name="colorSecondary">@color/pw_secondary</item>
+        <item name="colorOnSecondary">@color/pw_on_primary</item>
+        <item name="colorSurface">@color/pw_surface</item>
+        <item name="colorOnSurface">@color/pw_on_surface</item>
+        <item name="colorSurfaceVariant">@color/pw_surface_variant</item>
+        <item name="colorSurfaceContainerLowest">@color/pw_surface</item>
+        <item name="colorSurfaceContainerLow">@color/pw_surface_container</item>
+        <item name="colorSurfaceContainer">@color/pw_surface_container</item>
+        <item name="colorSurfaceContainerHigh">@color/pw_surface_container_high</item>
+        <item name="colorSurfaceContainerHighest">@color/pw_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/pw_on_surface_variant</item>
+        <item name="colorOutline">@color/pw_outline</item>
+        <item name="colorOutlineVariant">@color/pw_outline_variant</item>
+        <item name="colorError">@color/pw_error</item>
+        <item name="android:windowBackground">@color/pw_surface</item>
+        <item name="android:colorBackground">@color/pw_surface</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/pw_surface</item>
+        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
+    </style>
+
+    <style name="Theme.PhotoWidget" parent="Theme.PhotoWidget.Base" />
+
+    <style name="ShapeAppearance.PhotoWidget.Preview" parent="ShapeAppearance.Material3.Corner.Small">
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <!-- Quiet, borderless card used for every collapsible section. -->
+    <style name="Widget.PhotoWidget.SectionCard" parent="Widget.Material3.CardView.Filled">
+        <item name="cardCornerRadius">20dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="cardBackgroundColor">?attr/colorSurfaceContainer</item>
+    </style>
+
+    <style name="Widget.PhotoWidget.StyleChip" parent="Widget.Material3.Chip.Filter">
+        <item name="chipCornerRadius">14dp</item>
+        <item name="ensureMinTouchTargetSize">true</item>
+    </style>
+
+    <style name="TextAppearance.PhotoWidget.Section" parent="TextAppearance.Material3.TitleSmall">
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.PhotoWidget.Caption" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+        <item name="android:lineSpacingMultiplier">1.15</item>
+    </style>
+
+    <style name="TextAppearance.PhotoWidget.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:lineSpacingMultiplier">1.15</item>
+    </style>
+
+    <style name="TextAppearance.PhotoWidget.Title" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

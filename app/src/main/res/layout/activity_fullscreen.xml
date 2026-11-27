@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF000000">
+
+    <ImageView
+        android:id="@+id/fullscreen_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/cd_widget_preview"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:id="@+id/fullscreen_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="#66000000"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp">
+
+        <ImageButton
+            android:id="@+id/fullscreen_close"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/action_close"
+            android:src="@drawable/ic_back"
+            app:tint="#FFFFFFFF" />
+
+        <TextView
+            android:id="@+id/fullscreen_info"
+            style="@style/TextAppearance.PhotoWidget.Body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="#FFFFFFFF" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fullscreen_empty"
+        style="@style/TextAppearance.PhotoWidget.Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="24dp"
+        android:text="@string/fullscreen_empty"
+        android:textColor="#CCFFFFFF"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/fullscreen_controls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:background="#66000000"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/fullscreen_previous"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fullscreen_previous"
+            android:textColor="#FFFFFFFF"
+            app:icon="@drawable/ic_arrow_left"
+            app:iconTint="#FFFFFFFF" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/fullscreen_next"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fullscreen_next"
+            android:textColor="#FFFFFFFF"
+            app:icon="@drawable/ic_arrow_right"
+            app:iconTint="#FFFFFFFF" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_label">Photo Widget</string>
+    <string name="widget_description">Your photos on the home screen. Pick photos, albums or folders and choose how they rotate.</string>
+    <string name="widget_image_description">Photo widget image</string>
+    <string name="widget_initial_label">Loading photo…</string>
+</resources>

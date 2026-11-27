@@ -1,0 +1,28 @@
+# Gradle / Android build output
+.gradle/
+build/
+/local.properties
+/captures/
+.externalNativeBuild/
+.cxx/
+*.apk.idsig
+
+# IDE
+.idea/
+*.iml
+.DS_Store
+
+# Built APKs are published as GitHub release assets, not committed
+release/*.apk
+
+# Keystore material is never committed
+*.jks
+*.keystore
+keystore.properties
+
+# Local tooling
+.tools/
+*.log
+
+# Kotlin incremental build state
+.kotlin/

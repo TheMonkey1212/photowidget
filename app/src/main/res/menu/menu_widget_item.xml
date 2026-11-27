@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_edit"
+        android:icon="@drawable/ic_edit"
+        android:title="@string/action_edit" />
+    <item
+        android:id="@+id/action_update_now"
+        android:icon="@drawable/ic_history"
+        android:title="@string/action_update_now" />
+    <item
+        android:id="@+id/action_duplicate"
+        android:icon="@drawable/ic_copy"
+        android:title="@string/action_duplicate" />
+    <item
+        android:id="@+id/action_reset_history"
+        android:icon="@drawable/ic_history"
+        android:title="@string/action_reset_history" />
+    <item
+        android:id="@+id/action_remove"
+        android:icon="@drawable/ic_delete"
+        android:title="@string/action_remove" />
+</menu>
