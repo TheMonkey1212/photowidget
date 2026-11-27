@@ -572,8 +572,14 @@ photos/              MediaStore/SAF resolver, bitmap loading, blur (+ tests)
 widget/             Renderer, RemoteViews, scheduler, receivers, coordinator (+ tests)
 release/             Local copy of the built debug APK (git-ignored, published as a release asset)
 LICENSE              GNU GPL v3
+CONTRIBUTORS.md      Who wrote what
 THIRD_PARTY_LICENSES.md
 ```
+
+## Contributors
+
+Built by **TheMonkey1212** with **Codebuff** as AI pair-programmer — details in
+[CONTRIBUTORS.md](CONTRIBUTORS.md).
 
 ## License
 
